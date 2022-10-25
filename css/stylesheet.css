@@ -1,17 +1,43 @@
 body{
     background-color: #EDDDD0;
     display: grid;
+
 }
 header {
+    grid-column: 1/-1;
+    text-align: center;
     background-color: #A6CAD4;
 }
-nav{
-    background-color: lightblue;
-    text-align: center;
+
+h2{
+    grid-template-columns: 1/-1;
 }
 ul{
-    display: inline-block;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
 }
+footer {
+    background-color: #A6CAD4;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+nav ul li{
+    padding: 5px;
+}
+article{
+    grid-template-columns: 3fr 1fr 2fr;
+}
+
+
+/* nav{
+    background-color: lightblue;
+    text-align: center;
+} */
+/* ul{
+    display: inline-block;
+} */
 .headerindex{
     font-family: 'Montserrat', sans-serif;
 }
