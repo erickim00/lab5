@@ -87,12 +87,16 @@ div{
     grid-column: 2;
 }
 
-
 div span {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    border-bottom: 2px solid black;
 }
+
+.border {
+    border-bottom: solid black;
+}
+
+
 /* nav{
     background-color: lightblue;
     text-align: center;
