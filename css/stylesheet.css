@@ -17,6 +17,7 @@ ul {
 
 header nav ul{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -56,10 +57,8 @@ section{
 }
 
 div{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 150px);
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .first {
@@ -92,11 +91,30 @@ div span {
     grid-template-rows: 1fr 1fr;
 }
 
-.border {
-    border-bottom: solid black;
+.border1 {
+    border-bottom: none;
+}
+.border2 {
+    border-bottom: 1px solid gray;
 }
 
-
+@media (min-width:600px) {div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 150px);
+}
+.border1{
+    border-bottom: 2px solid black;
+}
+.border2{
+    border-bottom: 2px solid black ;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
 /* nav{
     background-color: lightblue;
     text-align: center;
