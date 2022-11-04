@@ -86,7 +86,7 @@ div{
     grid-column: 2;
 }
 
-div span {
+div article {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
