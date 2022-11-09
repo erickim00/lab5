@@ -22,16 +22,15 @@ do{
   
 } while ((isNaN(input)) || input.length != 4)
 
-
+x = false
 for(let course of courseList)
 {   
     if (course.code.includes(input)){
-    let x = true
+    console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
+    x = true
     }
-    else x = false
 }
-if (x == true)
-console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
-else (x == false)
-courseList.push({code: input, name: null})
+if (x === false){
+    courseList.push({code: input, name: null})
+}
 
