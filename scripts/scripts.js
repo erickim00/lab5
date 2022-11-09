@@ -21,8 +21,17 @@ do{
     input = prompt("Enter a four digit number: ");
   
 } while ((isNaN(input)) || input.length != 4)
+
+
 for(let course of courseList)
-{
-    if (course.code.includes(input))
-    console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
+{   
+    if (course.code.includes(input)){
+    let x = true
+    }
+    else x = false
 }
+if (x == true)
+console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
+else (x == false)
+courseList.push({code: input, name: null})
+
