@@ -32,5 +32,6 @@ for(let course of courseList)
 }
 if (x === false){
     courseList.push({code: input, name: null})
+    console.log('Successfully added course to course list')
 }
 
