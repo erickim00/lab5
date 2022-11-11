@@ -22,7 +22,7 @@ do{
   
 } while ((isNaN(input)) || input.length != 4)
 
-x = false
+let x = false
 for(let course of courseList)
 {   
     if (course.code.includes(input)){
